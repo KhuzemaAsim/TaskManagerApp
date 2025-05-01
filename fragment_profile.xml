@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:id="@+id/first_name_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name: "
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/last_name_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name: "
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phone_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact: "
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/gender_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender: "
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dob_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth: "
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Dark Mode"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/dark_mode_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update_profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

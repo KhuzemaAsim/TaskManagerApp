@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="?android:colorBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?android:textColorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+
+        <EditText
+            android:id="@+id/edit_first_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" First name"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edit_last_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Last name(optional)"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edit_phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Contact"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+
+        <Spinner
+            android:id="@+id/edit_gender_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/edit_dob_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your date of birth?"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/save_profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>
